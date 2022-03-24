@@ -1,10 +1,11 @@
-(function(exports) {
+(function (exports)
+{
 
 	var gx = exports.gx = {};
 
 	gx.PrimitiveType = {
- 		/*!< Draws a series of triangles. Each triangle (besides the first) shares a side with the previous triangle.
-		 * Each vertex (besides the first two) completes a triangle. */
+		/*!< Draws a series of triangles. Each triangle (besides the first) shares a side with the previous triangle.
+	 * Each vertex (besides the first two) completes a triangle. */
 		TRIANGLESTRIP: 0x98,
 
 		/*!< Draws a single triangle fan. The first vertex is the "centerpoint". The second and third vertex complete
@@ -39,19 +40,19 @@
 
 	gx.CompCnt = {
 		POS_XY: 0,
-	    POS_XYZ: 1,
-	    CLR_RGB: 0,
-	    CLR_RGBA: 1,
-	    TEX_S: 0,
-	    TEX_ST: 1
+		POS_XYZ: 1,
+		CLR_RGB: 0,
+		CLR_RGBA: 1,
+		TEX_S: 0,
+		TEX_ST: 1
 	};
 
 	gx.CompType = {
 		U8: 0,
-	    S8: 1,
-	    U16: 2,
-	    S16: 3,
-	    F32: 4,
+		S8: 1,
+		U16: 2,
+		S16: 3,
+		F32: 4,
 		RGBA8: 5,
 	};
 
